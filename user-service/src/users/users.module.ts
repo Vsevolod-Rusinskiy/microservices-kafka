@@ -6,8 +6,8 @@ import { User } from './entities/user.entity';
 import { KafkaModule } from '../kafka/kafka.module';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([User]), KafkaModule],
-  providers: [UsersService],
-  controllers: [UsersController],
+    imports: [TypeOrmModule.forFeature([User]), KafkaModule],
+    providers: [UsersService],
+    controllers: [UsersController],
 })
 export class UsersModule {}
